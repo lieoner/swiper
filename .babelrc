@@ -1,0 +1,31 @@
+{
+    "plugins": [
+        [
+            "@babel/plugin-transform-react-jsx",
+            {
+                "runtime": "automatic"
+            }
+        ],
+        [
+            "optional-require"
+        ],
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "."
+                ],
+                "alias": {
+                    "@src": "./src",
+                    "@app": "./src/app",
+                    "@modules": "./src/modules",
+                    "@shared": "./src/shared",
+                    "@assets": "./src/shared/assets",
+                    "@constants": "./src/shared/constants",
+                    "@theme": "./src/shared/theme",
+                    "@navigationTypes": "./src/app/navigation/types",
+                }
+            }
+        ],
+    ]
+}
