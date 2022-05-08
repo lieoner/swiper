@@ -1,12 +1,17 @@
 import React from 'react';
 
-import {StatusBar, View} from 'react-native';
+import {enableFreeze} from 'react-native-screens';
+
+import {AppProvider} from '@app/providers/app-provider/AppProvider';
+import Navigation from '@app/navigation/Navigation';
+
+enableFreeze(true);
 
 const App = () => {
     return (
-        <View>
-            <StatusBar barStyle={'light-content'} />
-        </View>
+        <AppProvider>
+            <Navigation />
+        </AppProvider>
     );
 };
 

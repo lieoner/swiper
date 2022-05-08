@@ -27,5 +27,8 @@
                 }
             }
         ],
+        [
+            "react-native-reanimated/plugin"
+        ]
     ]
 }
