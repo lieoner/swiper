@@ -8,6 +8,8 @@ import {
     useNavigationContainerRef,
 } from '@react-navigation/native';
 
+import AppStackSwitcher from './stacks/AppStackSwitcher';
+
 export let EXPORTED_INSETS: EdgeInsets;
 
 const Navigation = () => {
@@ -23,8 +25,9 @@ const Navigation = () => {
             <StatusBar
                 translucent
                 backgroundColor="transparent"
-                barStyle={'light-content'}
+                barStyle={'dark-content'}
             />
+            <AppStackSwitcher />
         </NavigationContainer>
     );
 };
