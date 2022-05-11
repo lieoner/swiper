@@ -7,6 +7,12 @@ import Navigation from '@app/navigation/Navigation';
 
 enableFreeze(true);
 
+if (__DEV__) {
+    import('../../../reactotron.config').then(() =>
+        console.log('Reactotron Configured'),
+    );
+}
+
 const App = () => {
     return (
         <AppProvider>
