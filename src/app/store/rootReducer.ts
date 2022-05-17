@@ -1,9 +1,15 @@
 import {AnyAction} from 'redux';
 import {combineReducers} from '@reduxjs/toolkit';
 
-const initialState = {};
+import {mainInitialState, mainReducer} from '@modules/Main';
 
-const appReducer = combineReducers({});
+const initialState = {
+    mainReducer: mainInitialState,
+};
+
+const appReducer = combineReducers({
+    mainReducer,
+});
 
 const rootReducer = (state = initialState, action: AnyAction) => {
     return appReducer(state, action);

@@ -1,1 +1,3 @@
-export const SLICES_TYPES = {};
+export const SLICES_TYPES = {
+    main: 'main',
+};
