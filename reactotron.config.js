@@ -1,3 +1,4 @@
+import {reactotronRedux} from 'reactotron-redux';
 import Reactotron, {
     asyncStorage,
     networking,
@@ -10,6 +11,7 @@ export const reactotron = Reactotron.setAsyncStorageHandler(AsyncStorage)
         name: 'Swiper App',
         port: 9090,
     })
+    .use(reactotronRedux())
     .use(asyncStorage())
     .use(openInEditor())
     .use(networking())
