@@ -7,4 +7,5 @@ export const styles = StyleSheet.create({
         flex: 1,
         paddingHorizontal: SCREEN_PADDING,
     },
+    
 });
